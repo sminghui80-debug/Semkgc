@@ -114,9 +114,6 @@ python3 src/main.py \
 All commands above are also provided in the `run_commands.md` file.
 
 
-## Citation
-If you find this work useful, please consider citing:
 
-```
 ```
 
