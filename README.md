@@ -45,7 +45,7 @@ data
 
 The scripts to train and evaluate a model on the WN18RR and FB15k-237 datasets are available in the `scripts` folder.
 
-# Running Commands
+## Running Commands
 
 This document provides the exact training and evaluation commands for reproducing results on the WN18RR and FB15k-237 datasets. All hyperparameter settings are consistent with the configurations reported in the paper.
 
