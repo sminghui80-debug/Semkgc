@@ -4,7 +4,7 @@
 
 ## Overview
 
-This repository contains the implementation of the paper "KERMIT: Knowledge Graph Completion of Enhanced Relation Modeling with Inverse Transformation". In this paper, we introduce enhanced KGC using LLM-generated knowledge (predictive descriptions and inverse relations) and supervised contrastive learning, achieving significant performance boosts.
+This repository contains the implementation of the paper SemKGC: Semantic-Aware Knowledge Graph Completion with Fine-Grained Relation Semantics. In this work, we propose a semantic-enhanced KGC framework that leverages fine-grained relation semantic representations and optimized training paradigms, achieving consistent performance gains across standard benchmarks.
 
 ## Requirements
 
