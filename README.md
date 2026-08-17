@@ -1,9 +1,9 @@
-# SemKGC: Semantic Label Generation with LLMs for Knowledge Graph Completion
+# LLM-Based Semantic Label Generation for Knowledge Graph Completion under Sparse Tex
 
 ![SemKGC](./SemKGC.png)
 
 ## Overview
-This repository contains the implementation of the paper *SemKGC: Semantic Label Generation with LLMs for Knowledge Graph Completion under Sparse Text*. In this work, we propose a semantic-enhanced KGC framework that generates high-quality semantic labels from entity contextual subgraphs via large language models, combined with a dual-encoder contrastive learning paradigm, achieving consistent performance gains across standard benchmarks.
+This repository contains the implementation of the paper *LLM-Based Semantic Label Generation for Knowledge Graph Completion under Sparse Tex*. In this work, we propose a semantic-enhanced KGC framework that generates high-quality semantic labels from entity contextual subgraphs via large language models, combined with a dual-encoder contrastive learning paradigm, achieving consistent performance gains across standard benchmarks.
 
 ## Requirements
 - Python 3.7 or above
