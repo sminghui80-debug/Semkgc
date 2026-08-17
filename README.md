@@ -11,7 +11,6 @@ This repository contains the implementation of the paper SemKGC: Semantic-Aware 
 - Python 3.7 or above
 - Additional dependencies are listed in `requirements.txt`
 
-All experiments are conducted on a machine with 4 Quadro RTX 8000 GPUs.
 
 ## Installation
 
