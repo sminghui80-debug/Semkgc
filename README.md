@@ -55,13 +55,5 @@ The code is partially borrowed from [SimKGC](https://github.com/intfloat/SimKGC)
 If you find this work useful, please consider citing:
 
 ```
-@misc{li2024kermitknowledgegraphcompletion,
-      title={KERMIT: Knowledge Graph Completion of Enhanced Relation Modeling with Inverse Transformation}, 
-      author={Haotian Li and Bin Yu and Yuliang Wei and Kai Wang and Richard Yi Da Xu and Bailing Wang},
-      year={2024},
-      eprint={2309.14770},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2309.14770}, 
-}
+
 ```
