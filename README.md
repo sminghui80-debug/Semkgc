@@ -113,8 +113,6 @@ python3 src/main.py \
 ```
 All commands above are also provided in the `run_commands.md` file.
 
-## Acknowledgements
-The code is partially borrowed from [SimKGC](https://github.com/intfloat/SimKGC).
 
 ## Citation
 If you find this work useful, please consider citing:
