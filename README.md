@@ -3,53 +3,44 @@
 ![SemKGC](./SemKGC.png)
 
 ## Overview
-
-This repository contains the implementation of the paper SemKGC: Semantic-Aware Knowledge Graph Completion with Fine-Grained Relation Semantics. In this work, we propose a semantic-enhanced KGC framework that leverages fine-grained relation semantic representations and optimized training paradigms, achieving consistent performance gains across standard benchmarks.
+This repository contains the implementation of the paper *SemKGC: Semantic Label Generation with LLMs for Knowledge Graph Completion under Sparse Text*. In this work, we propose a semantic-enhanced KGC framework that generates high-quality semantic labels from entity contextual subgraphs via large language models, combined with a dual-encoder contrastive learning paradigm, achieving consistent performance gains across standard benchmarks.
 
 ## Requirements
-
 - Python 3.7 or above
 - Additional dependencies are listed in `requirements.txt`
 
-
 ## Installation
-
 1. Clone this repository
-
 2. Install the required dependencies:
-
-```sh
+```bash
 pip install -r requirements.txt
 ```
 
 ## Data preparation
 All data processing is complete. The directory structure is illustrated below.
-
 ```
 data
 ├── FB15k237
-│   ├── entities.json
-│   ├── inverse_relations.json
-│   ├── test.json
-│   ├── train.json
-│   └── valid.json
-├── WN18RR
-│   ├── entities.json
-│   ├── inverse_relations.json
-│   ├── test.json
-│   ├── train.json
-│   └── valid.json
+│   ├── entities.json
+│   ├── inverse_relations.json
+│   ├── test.json
+│   ├── train.json
+│   └── valid.json
+└── WN18RR
+    ├── entities.json
+    ├── inverse_relations.json
+    ├── test.json
+    ├── train.json
+    └── valid.json
 ```
 
 ## Training and evaluation
-
 The scripts to train and evaluate a model on the WN18RR and FB15k-237 datasets are available in the `scripts` folder.
 
-## Running Commands
+### Running Commands
+All hyperparameter settings below are strictly consistent with the configurations reported in the paper.
 
-This document provides the exact training and evaluation commands for reproducing results on the WN18RR and FB15k-237 datasets. All hyperparameter settings are consistent with the configurations reported in the paper.
-
-## WN18RR
+#### WN18RR
 Run the following command to train and evaluate on the WN18RR dataset:
 ```bash
 python3 src/main.py \
@@ -69,9 +60,11 @@ python3 src/main.py \
   --neighbor_weight 0.05 \
   --rerank_n_hop 5 \
   --eval_batch_size 128
+```
 
-## FB15k-237
+#### FB15k-237
 Run the following command to train and evaluate on the FB15k-237 dataset:
+```bash
 TOKENIZERS_PARALLELISM=true python src/main.py \
   --dataset FB15k237 \
   --pretrained_model /path/to/bert-base-uncased \
@@ -89,15 +82,23 @@ TOKENIZERS_PARALLELISM=true python src/main.py \
   --neighbor_weight 0.05 \
   --rerank_n_hop 2 \
   --eval_batch_size 128
+```
 
-All commands above are provided in the `run_commands.txt` file.
+All commands above are also provided in the `run_commands.md` file.
 
 ## Acknowledgements
 The code is partially borrowed from [SimKGC](https://github.com/intfloat/SimKGC).
 
 ## Citation
 If you find this work useful, please consider citing:
-
+```bibtex
+@article{anonymous2026semkgc,
+  title={SemKGC: Semantic Label Generation with LLMs for Knowledge Graph Completion},
+  author={Anonymous},
+  journal={Applied Soft Computing},
+  year={2026},
+  note={Under review}
+}
+```
 ```
 
-```
