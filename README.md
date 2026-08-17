@@ -23,9 +23,7 @@ pip install -r requirements.txt
 ```
 
 ## Data preparation
-The link to the datasets can be found in the [Google Drive folder](https://drive.google.com/drive/folders/1mFER0J8TmrtR18VBaKOc6_VYYnjb88uu?usp=sharing).
-
-Download the datasets and extract them to the `data` folder to get the following directory structure:
+All data processing is complete. The directory structure is illustrated below.
 
 ```
 data
