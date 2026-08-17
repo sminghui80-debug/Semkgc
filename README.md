@@ -26,11 +26,18 @@ data
 │   ├── test.json
 │   ├── train.json
 │   └── valid.json
-└── WN18RR
+├── WN18RR
+│   ├── entities.json
+│   ├── inverse_relations.json
+│   ├── test.json
+│   ├── train.json
+│   └── valid.json
+└── umls
     ├── entities.json
     ├── inverse_relations.json
     ├── test.json
     ├── train.json
+    ├── umls.txt
     └── valid.json
 ```
 
@@ -83,7 +90,27 @@ TOKENIZERS_PARALLELISM=true python src/main.py \
   --rerank_n_hop 2 \
   --eval_batch_size 128
 ```
-
+#### UMLS
+Run the following command to train and evaluate on the UMLS dataset:
+```bash
+python3 src/main.py \
+  --dataset umls \
+  --pretrained_model /path/to/bert-base-uncased \
+  --tau 0.03 \
+  --max_num_tokens 150 \
+  --additive_margin 0.02 \
+  --epochs 65 \
+  --batch_size 128 \
+  --lr 8e-5 \
+  --use_neighbor_names \
+  --pooling mean \
+  --workers 4 \
+  --experiment_name wn18rr \
+  --do_test \
+  --neighbor_weight 0.05 \
+  --rerank_n_hop 5 \
+  --eval_batch_size 128
+```
 All commands above are also provided in the `run_commands.md` file.
 
 ## Acknowledgements
