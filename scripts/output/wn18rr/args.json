@@ -1,0 +1,35 @@
+{
+    "train_args": {
+        "dataset": "WN18RR",
+        "max_num_tokens": 150,
+        "epochs": 65,
+        "batch_size": 128,
+        "save_freq": 5,
+        "log_step": 10,
+        "seed": 24213,
+        "lr": 8e-05,
+        "weight_decay": 0.0001,
+        "use_amp": true,
+        "workers": 4,
+        "grad_clip": 10.0,
+        "warmup": 400,
+        "output_path": "output/",
+        "experiment_name": "wn18rr",
+        "project": null,
+        "entity": null
+    },
+    "model_args": {
+        "pretrained_model": "google-bert/bert-base-uncased",
+        "use_neighbor_names": true,
+        "tau": 0.03,
+        "finetune_tau": false,
+        "additive_margin": 0.02,
+        "pooling": "mean"
+    },
+    "eval_args": {
+        "do_test": true,
+        "neighbor_weight": 0.05,
+        "rerank_n_hop": 5,
+        "eval_batch_size": 128
+    }
+}
