@@ -1,6 +1,6 @@
 # SemKGC: Semantic Label Generation with LLMs for Knowledge Graph Completion
 
-![KERMIT](./assets/kermit.png)
+![SemKGC](./assets/kermit.png)
 
 ## Overview
 
