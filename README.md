@@ -91,14 +91,7 @@ The code is partially borrowed from [SimKGC](https://github.com/intfloat/SimKGC)
 
 ## Citation
 If you find this work useful, please consider citing:
-```bibtex
-@article{anonymous2026semkgc,
-  title={SemKGC: Semantic Label Generation with LLMs for Knowledge Graph Completion},
-  author={Anonymous},
-  journal={Applied Soft Computing},
-  year={2026},
-  note={Under review}
-}
+
 ```
 ```
 
